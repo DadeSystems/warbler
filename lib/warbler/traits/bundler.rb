@@ -31,7 +31,7 @@ module Warbler
         add_bundler_gems if config.bundler
       end
 
-      def add_bundler_gems; require 'bundler'
+      def add_bundler_gems; #require 'bundler'
         # config.gems.clear allow to add `config.gems` on top of those bundled
         config.gem_dependencies = false # Bundler takes care of these
         config.bundler = {} if config.bundler == true
